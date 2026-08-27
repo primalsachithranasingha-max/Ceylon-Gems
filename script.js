@@ -85,3 +85,4 @@ el("whatsappBtn").addEventListener("click",()=>{const phone=WHATSAPP_NUMBER.repl
 el("searchBtn").addEventListener("click",()=>{document.querySelector("#shop").scrollIntoView();setTimeout(()=>el("productSearch").focus(),500)});
 const WHATSAPP_NUMBER="+94XXXXXXXXX"; // Replace with your real WhatsApp number.
 renderFeatured();renderProducts();renderCart();
+all the photos of gems must be real gems with loup clean

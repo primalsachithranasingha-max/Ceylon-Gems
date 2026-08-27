@@ -1,11 +1,3 @@
-Yes. Since your website will show **real gemstone photos, individual prices, gemstone names, weights, certificates, and detailed descriptions**, I would use a font system that feels **luxurious for the brand but highly readable for product information**.
-
-### 💎 Best choice for “Ceylon Gems”
-
-**Brand / headings:** **Cormorant Garamond**
-**Product details / prices / descriptions:** **Montserrat**
-
-This pairing is particularly suitable for a luxury website: Cormorant Garamond provides the refined serif character, while Montserrat gives clean, readable product information. ([Jukebox Print][1])
 
 **Example:**
 

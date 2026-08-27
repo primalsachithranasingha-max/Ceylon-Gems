@@ -1,39 +1,49 @@
-For a premium **Ceylon gemstone business website**, I’d recommend a font pairing that feels **luxurious, elegant, trustworthy, and international**.
+Yes. Since your website will show **real gemstone photos, individual prices, gemstone names, weights, certificates, and detailed descriptions**, I would use a font system that feels **luxurious for the brand but highly readable for product information**.
 
-### 💎 My top choice
+### 💎 Best choice for “Ceylon Gems”
 
-**Logo / Brand name: `Cormorant Garamond`**
+**Brand / headings:** **Cormorant Garamond**
+**Product details / prices / descriptions:** **Montserrat**
 
-* Elegant and luxurious
-* Excellent for gemstone and jewelry brands
-* Gives a high-end, classic Ceylon feel
-* Works especially well for **“CEYLON GEMS”**
+This pairing is particularly suitable for a luxury website: Cormorant Garamond provides the refined serif character, while Montserrat gives clean, readable product information. ([Jukebox Print][1])
 
-**Website text: `Montserrat`**
+**Example:**
 
-* Clean and modern
-* Very readable
-* Creates a good contrast with the elegant logo font
+> **CEYLON GEMS**
+> *Authentic Ceylon Gemstones*
+>
+> **Natural Blue Sapphire**
+> 2.15 ct · Unheated
+> **$4,850**
+>
+> A natural Ceylon Blue Sapphire with excellent colour and brilliance...
 
-### Other excellent options
+### Recommended typography
 
-| Style                | Brand Font             | Body Font  |
-| -------------------- | ---------------------- | ---------- |
-| 💎 Luxury            | **Cormorant Garamond** | Montserrat |
-| 👑 Premium Classic   | **Playfair Display**   | Lato       |
-| ✨ Modern Luxury      | **Cinzel**             | Inter      |
-| 🇱🇰 Heritage Luxury | **DM Serif Display**   | Poppins    |
-| 💍 Elegant & Minimal | **Libre Baskerville**  | Montserrat |
+* **Logo:** Cormorant Garamond — SemiBold
+* **Main headings:** Cormorant Garamond — 600
+* **Gemstone names:** Cormorant Garamond — 600
+* **Prices:** Montserrat — 600
+* **Descriptions:** Montserrat — 400
+* **Navigation:** Montserrat — 500
+* **Buttons:** Montserrat — 600
+* **Small specifications:** Montserrat — 400
 
-### For **Ceylon Gems**, I would choose:
+I would **not use Cormorant Garamond for all the small product information**, because its fine strokes are better suited to display sizes; Montserrat is a safer choice for small UI and descriptions. ([designyourway.net][2])
+
+### 🌟 Brand appearance
 
 **CEYLON GEMS**
-*Cormorant Garamond — SemiBold*
-
-with a small tagline underneath such as:
+`Cormorant Garamond`
 
 **AUTHENTIC CEYLON GEMSTONES**
+`Montserrat`
 
-This combination would make the site look much more like a **premium international gemstone brand** rather than a typical local jewelry shop.
+This should give the website a **premium international gemstone/jewellery feel** while keeping your real photos, prices and descriptions easy to read.
 
-If you want, I can also **create a complete font + color + logo style guide for “Ceylon Gems”** suitable for your website.
+Both fonts are available through Google Fonts and have permissive licensing suitable for commercial web use. ([Jukebox Print][1])
+
+If you're building the site with an AI website generator, I would specifically tell it: **“Use Cormorant Garamond + Montserrat throughout the Ceylon Gems website, with Cormorant Garamond for luxury branding and headings and Montserrat for all product information, prices, descriptions and navigation.”**
+
+[1]: https://www.jukeboxprint.com/fonts/font-pairing/cormorant-garamond-and-montserrat?utm_source=chatgpt.com "Cormorant Garamond and Montserrat Font Pairing | Best Combination | Jukebox Print"
+[2]: https://www.designyourway.net/blog/cormorant-garamond-font-pairing/?utm_source=chatgpt.com "Elegant Cormorant Garamond Font Pairing Inspiration"

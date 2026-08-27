@@ -3,125 +3,730 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ceylon Gems — authentic Sri Lankan gemstones, carefully selected for collectors and jewellery lovers worldwide.">
-  <title>Ceylon Gems | Authentic Ceylon Gemstones</title>
+  <title>Ceylon Gems SL | Certified Ceylon Sapphires & Haute Joaillerie</title>
+  <meta name="description" content="Ceylon Gems SL - Purveyors of natural unheated Ceylon Royal Blue Sapphires, Padparadscha, Alexandrite, and bespoke fine jewelry from Ratnapura and Elahera, Sri Lanka. GIA, GRS & Gübelin certified.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,35 80,95 20,95 5,35' fill='%23d4af37'/><polygon points='50,15 85,40 72,85 28,85 15,40' fill='%231a53ff'/></svg>">
+
+  <!-- Google Fonts & Font Awesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header" id="top">
-  <div class="announcement">Authentic Ceylon gemstones • Worldwide enquiries welcome</div>
-  <nav class="nav container">
-    <a class="brand" href="#home"><span>CEYLON</span><strong>GEMS</strong></a>
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
-    <div class="nav-links">
-      <a href="#home">Home</a><a href="#collection">Collection</a><a href="#about">Our Story</a><a href="#guide">Gem Guide</a><a href="#contact">Contact</a>
-    </div>
-    <a class="nav-cta" href="#collection">Explore Gems</a>
-  </nav>
-</header>
 
-<main>
-<section class="hero" id="home">
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <p class="eyebrow">FROM THE ISLAND OF CEYLON</p>
-    <h1>Nature's Rarest<br><em>Treasures.</em></h1>
-    <p class="hero-copy">Discover authentic Sri Lankan gemstones, selected for their natural beauty, character and exceptional colour.</p>
-    <div class="hero-actions"><a class="btn btn-gold" href="#collection">View Collection</a><a class="text-link" href="#about">Discover our story →</a></div>
-  </div>
-</section>
-
-<section class="trust-strip">
-  <div class="container trust-grid">
-    <div><b>Natural Beauty</b><span>Individually selected stones</span></div>
-    <div><b>Ceylon Origin</b><span>From Sri Lanka's gem tradition</span></div>
-    <div><b>Transparent Details</b><span>Weight, colour & treatment info</span></div>
-    <div><b>Worldwide</b><span>Enquiries from collectors globally</span></div>
-  </div>
-</section>
-
-<section class="section" id="collection">
-  <div class="container">
-    <div class="section-head">
-      <div><p class="eyebrow">THE COLLECTION</p><h2>Selected <em>Gems</em></h2></div>
-      <p>Explore a curated selection. Replace the sample photos and details with your actual inventory.</p>
-    </div>
-    <div class="shop-tools">
-      <div class="search-wrap"><input id="search" type="search" placeholder="Search gemstones..."><span>⌕</span></div>
-      <div class="filters" id="filters">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="Sapphire">Sapphires</button>
-        <button class="filter" data-filter="Ruby">Ruby</button>
-        <button class="filter" data-filter="Spinel">Spinel</button>
+  <!-- ========================================================================
+       Top Bar
+       ======================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fas fa-shield-alt"></i> 100% Certified Ceylon Provenance</span>
+        <span><i class="fas fa-plane"></i> Insured Global Courier via Ferrari & Malca-Amit</span>
+        <span><i class="fab fa-whatsapp"></i> VIP Concierge: +94 77 123 4567</span>
       </div>
-      <select id="sort" aria-label="Sort gemstones">
-        <option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option>
-      </select>
-    </div>
-    <div class="product-grid" id="product-grid"></div>
-    <p class="empty" id="empty">No gemstones match your search.</p>
-  </div>
-</section>
-
-<section class="feature-section">
-  <div class="container feature-grid">
-    <div class="feature-image"></div>
-    <div class="feature-copy">
-      <p class="eyebrow">THE CEYLON LEGACY</p>
-      <h2>A gemstone tradition shaped by <em>island, earth & time.</em></h2>
-      <p>Sri Lanka has been renowned for gemstones for centuries. Its name, Ceylon, remains closely associated with exceptional sapphires and a remarkable variety of coloured stones.</p>
-      <p>At Ceylon Gems, every stone deserves clear information and thoughtful presentation—from its colour and cut to its carat weight and treatment status.</p>
-      <a class="btn btn-dark" href="#about">Our Story</a>
+      <div class="top-bar-right">
+        <div class="currency-selector-wrap">
+          <i class="fas fa-globe"></i>
+          <label for="currencySelector" class="sr-only">Currency</label>
+          <select id="currencySelector" aria-label="Select Currency">
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="LKR">LKR (Rs)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="JPY">JPY (¥)</option>
+          </select>
+        </div>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="section dark-section" id="about">
-  <div class="container about-grid">
-    <div><p class="eyebrow">WHY CEYLON GEMS</p><h2>Beauty with <em>confidence.</em></h2></div>
-    <div class="about-points">
-      <article><span>01</span><div><h3>Authenticity first</h3><p>Present each gemstone with accurate specifications and treatment information.</p></div></article>
-      <article><span>02</span><div><h3>Real stones, real details</h3><p>Use your own high-resolution photographs, prices and descriptions for every listing.</p></div></article>
-      <article><span>03</span><div><h3>Personal service</h3><p>Make it easy for buyers to ask questions and request additional photographs or certification details.</p></div></article>
+  <!-- ========================================================================
+       Main Navigation Bar
+       ======================================================================== -->
+  <nav class="navbar" id="mainNavbar">
+    <div class="container navbar-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Ceylon Gems SL Home">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fcedb9" />
+                <stop offset="50%" stop-color="#d4af37" />
+                <stop offset="100%" stop-color="#99730e" />
+              </linearGradient>
+            </defs>
+            <polygon points="50,4 96,34 80,96 20,96 4,34" fill="none" stroke="url(#logoGold)" stroke-width="4" />
+            <polygon points="50,16 84,40 72,86 28,86 16,40" fill="#0b1329" stroke="url(#logoGold)" stroke-width="2" />
+            <polygon points="50,26 74,44 65,76 35,76 26,44" fill="#1a53ff" opacity="0.85" />
+            <circle cx="50" cy="50" r="6" fill="#fcedb9" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Ceylon<span class="gold-gradient-text"> Gems SL</span></span>
+          <span class="brand-sub">Natural Sapphires & Haute Joaillerie</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#showcase" class="active">Gem Showcase</a></li>
+        <li><a href="#atelier">Bespoke Atelier</a></li>
+        <li><a href="#certification">Lab Certification</a></li>
+        <li><a href="#heritage">Ceylon Heritage</a></li>
+        <li><a href="#education">4Cs Education</a></li>
+        <li><a href="#appointment">Private Viewing</a></li>
+      </ul>
+
+      <!-- Action Items -->
+      <div class="nav-actions">
+        <button class="inquiry-bag-btn open-inquiry-drawer-btn" aria-label="Open Inquiry Bag">
+          <i class="fas fa-gem"></i>
+          <span>Inquiry Bag</span>
+          <span class="inquiry-count-badge">0</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <header class="hero-section">
+    <canvas id="heroShimmerCanvas" class="hero-canvas"></canvas>
+    <div class="hero-bg-glow"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge animate-fade-in">
+        <i class="fas fa-crown"></i> Direct From Ceylon Mines to Global Collectors
+      </div>
+      <h1 class="hero-title">
+        <span>The World's Finest</span>
+        <span class="gold-gradient-text">Ceylon Sapphires</span>
+        <span>& Rare Gemstones</span>
+      </h1>
+      <p class="hero-description">
+        Direct custodians of unheated Royal Blue, Padparadscha, Alexandrite, and rare spinels from the legendary alluvial gravels of Ratnapura and Elahera, Sri Lanka. Certified by GIA, GRS, and Gübelin.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#showcase" class="btn btn-gold btn-large">
+          <i class="fas fa-gem"></i> Explore Rare Acquisitions
+        </a>
+        <a href="#atelier" class="btn btn-outline btn-large">
+          <i class="fas fa-ring"></i> Custom Ring Atelier
+        </a>
+      </div>
+
+      <!-- Accreditations Strip -->
+      <div class="hero-accreditations">
+        <div class="accreditations-label">Accredited Gemological Laboratories & Ethical Lineage</div>
+        <div class="accreditations-logos">
+          <div class="accred-item"><i class="fas fa-award"></i> GIA Certified</div>
+          <div class="accred-item"><i class="fas fa-shield-halved"></i> GRS Swiss Labs</div>
+          <div class="accred-item"><i class="fas fa-certificate"></i> Gübelin Gem Lab</div>
+          <div class="accred-item"><i class="fas fa-landmark"></i> NGJA Sri Lanka</div>
+          <div class="accred-item"><i class="fas fa-leaf"></i> 100% Ethical Artisanal Mining</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Interactive Gemstone Showcase Section
+       ======================================================================== -->
+  <section class="section-padding" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Vault</span>
+        <h2 class="section-title">Certified <span class="gold-gradient-text">Ceylon Gemstones</span></h2>
+        <p class="section-subtitle">Each gemstone is hand-selected for crystalline transparency, master lapidary facet precision, and international laboratory accreditation.</p>
+      </div>
+
+      <!-- Filter Controls Panel -->
+      <div class="showcase-controls-panel">
+        <!-- Search and Sort Top Row -->
+        <div class="filter-top-row">
+          <div class="search-box-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="gemSearchInput" class="styled-input" placeholder="Search by gem name, variety, origin, or cert # (e.g. Royal Blue, GIA, Ratnapura)..." />
+          </div>
+          <div class="filter-dropdown-wrap">
+            <select id="gemSortSelect" class="styled-select" aria-label="Sort Gemstones">
+              <option value="featured">Sort: Featured Rarities</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="carat-high">Carat Weight: Largest First</option>
+              <option value="newest">New Acquisitions</option>
+            </select>
+          </div>
+          <div class="filter-dropdown-wrap">
+            <select id="treatmentFilterSelect" class="styled-select" aria-label="Filter Treatment">
+              <option value="all">Enhancement: All</option>
+              <option value="unheated">100% Natural Unheated</option>
+              <option value="heated">Traditional Gentle Heat</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="category-pills-row">
+          <button class="filter-pill active" data-category="all">All Rarities</button>
+          <button class="filter-pill" data-category="sapphire"><i class="fas fa-gem"></i> Ceylon Sapphires</button>
+          <button class="filter-pill" data-category="ruby"><i class="fas fa-fire"></i> Ceylon Rubies</button>
+          <button class="filter-pill" data-category="alexandrite"><i class="fas fa-adjust"></i> Alexandrite</button>
+          <button class="filter-pill" data-category="spinel"><i class="fas fa-cube"></i> Cobalt Spinel</button>
+          <button class="filter-pill" data-category="rare-oddities"><i class="fas fa-star"></i> Star Gems & Tsavorite</button>
+          <button class="filter-pill" data-category="jewelry"><i class="fas fa-crown"></i> Haute Joaillerie</button>
+        </div>
+
+        <!-- Secondary Row: Cuts & Carats -->
+        <div class="filter-secondary-row">
+          <div class="cut-selector-group">
+            <span class="cut-label">Shape / Cut:</span>
+            <button class="cut-filter-btn active" data-cut="all">All</button>
+            <button class="cut-filter-btn" data-cut="Cushion">Cushion</button>
+            <button class="cut-filter-btn" data-cut="Oval">Oval</button>
+            <button class="cut-filter-btn" data-cut="Emerald">Emerald</button>
+            <button class="cut-filter-btn" data-cut="Pear">Pear</button>
+            <button class="cut-filter-btn" data-cut="Cabochon">Cabochon</button>
+          </div>
+
+          <div class="carat-slider-group">
+            <label for="caratRangeInput" id="caratValueLabel">Up to 20 Carats</label>
+            <input type="range" id="caratRangeInput" min="1" max="20" step="0.5" value="20" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Meta -->
+      <div class="results-meta-bar">
+        <span id="catalogResultsCount">Displaying 12 Rare Ceylon Acquisitions</span>
+        <button class="reset-btn" onclick="resetFilters()">Reset All Filters</button>
+      </div>
+
+      <!-- Gemstone Grid Container -->
+      <div class="gem-catalog-grid" id="gemCatalogGrid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Bespoke Atelier (Customizer Studio) Section
+       ======================================================================== -->
+  <section class="section-padding bespoke-section" id="atelier">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Haute Studio</span>
+        <h2 class="section-title">The Bespoke <span class="gold-gradient-text">Ring Customizer</span></h2>
+        <p class="section-subtitle">Select an unheated certified Ceylon gemstone, configure your architectural setting in solid Platinum 950 or 18K Gold, and view instant live rendering.</p>
+      </div>
+
+      <!-- Customizer UI Hook Container -->
+      <div id="bespokeCustomizer">
+        <!-- Rendered by customizer.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Official Certificate Verification Lab Simulator
+       ======================================================================== -->
+  <section class="section-padding cert-section" id="certification">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Provenance & Verification</span>
+        <h2 class="section-title">Official <span class="gold-gradient-text">Lab Report Registry</span></h2>
+        <p class="section-subtitle">Every Ceylon Gems SL acquisition is registered with world-leading gemological institutes. Query your certificate dossier in real-time.</p>
+      </div>
+
+      <div class="cert-lookup-box">
+        <div class="cert-search-bar">
+          <input type="text" id="certNumberInput" class="styled-input" placeholder="Enter Lab Report Number (e.g. CG-GIA-8821, CG-GRS-4019, CG-GUB-3392)..." />
+          <button class="btn btn-gold" id="verifyCertBtn">
+            <i class="fas fa-shield-check"></i> Verify Authenticity
+          </button>
+        </div>
+
+        <div class="sample-reports">
+          Sample Live Dossiers to Test:
+          <a onclick="verifyCertDirect('CG-GIA-8821')">CG-GIA-8821 (Royal Blue)</a> ·
+          <a onclick="verifyCertDirect('CG-GUB-3392')">CG-GUB-3392 (Padparadscha)</a> ·
+          <a onclick="verifyCertDirect('CG-SSEF-1102')">CG-SSEF-1102 (Alexandrite)</a> ·
+          <a onclick="verifyCertDirect('CG-GRS-4019')">CG-GRS-4019 (Cornflower)</a>
+        </div>
+
+        <div id="certResultDisplay" class="cert-result-wrap">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Ceylon Heritage & Mine-To-Market Story
+       ======================================================================== -->
+  <section class="section-padding" id="heritage">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Serendib Provenance</span>
+        <h2 class="section-title">The Legendary <span class="gold-gradient-text">Valleys of Ceylon</span></h2>
+        <p class="section-subtitle">For over two millennia, Sri Lanka ('Ratna-Dweepa' or Island of Gems) has provided the crown jewels of world royalty through sustainable, non-destructive artisanal gravel pits.</p>
+      </div>
+
+      <div class="regions-grid">
+        <!-- Ratnapura -->
+        <div class="region-card">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&w=800&q=80" alt="Ratnapura Gem Valleys" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=800&q=80';" />
+            <div class="region-badge">Historic Epicenter</div>
+          </div>
+          <div class="region-card-body">
+            <span class="region-tagline">The City of Gems</span>
+            <h3>Ratnapura Alluvial Basin</h3>
+            <p>Beneath the shadow of Sri Pada (Adam's Peak), prehistoric riverbeds hold the dense gravel ('illam') that produces the world's most vivid velvet Royal Blue corundums.</p>
+            <div class="region-gems-list">
+              <span class="gem-tag">Royal Blue Sapphire</span>
+              <span class="gem-tag">Padparadscha</span>
+              <span class="gem-tag">Chrysoberyl Alexandrite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elahera -->
+        <div class="region-card">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Elahera Mahaweli Valley" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=800&q=80';" />
+            <div class="region-badge">Alluvial Wonder</div>
+          </div>
+          <div class="region-card-body">
+            <span class="region-tagline">Mahaweli River Basin</span>
+            <h3>Elahera Valley</h3>
+            <p>Celebrated internationally for producing gems of immaculate optical purity and open cornflower nuances with high facet fire and crystalline brilliance.</p>
+            <div class="region-gems-list">
+              <span class="gem-tag">Cornflower Blue</span>
+              <span class="gem-tag">Cobalt Spinel</span>
+              <span class="gem-tag">Cat's Eye Chrysoberyl</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Balangoda -->
+        <div class="region-card">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Balangoda Mountain Pits" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=800&q=80';" />
+            <div class="region-badge">Rarest Color Zones</div>
+          </div>
+          <div class="region-card-body">
+            <span class="region-tagline">Subterranean Deposits</span>
+            <h3>Balangoda & Pelmadulla</h3>
+            <p>Known for deep artisanal timber-shaft mining that yields the holy grail 'Padma Raga' lotus blossoms and glowing chromium-rich Ceylon rubies.</p>
+            <div class="region-gems-list">
+              <span class="gem-tag">Lotus Padparadscha</span>
+              <span class="gem-tag">Pigeon Blood Ruby</span>
+              <span class="gem-tag">Imperial Yellow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       The 4Cs Sapphire Connoisseur Guide
+       ======================================================================== -->
+  <section class="section-padding" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Connoisseur Knowledge</span>
+        <h2 class="section-title">The 4Cs of <span class="gold-gradient-text">Ceylon Sapphires</span></h2>
+        <p class="section-subtitle">Understanding the gemological standards that define investment-grade natural unheated corundums.</p>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon-wrap"><i class="fas fa-palette"></i></div>
+          <h3>1. Hue & Saturation (Color)</h3>
+          <p>The foremost valuation factor. Royal Blue features rich vivid saturation without dark extinction; Padparadscha requires a delicate 50/50 pink-orange balance; Cornflower radiates velvety daylight glow.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon-wrap"><i class="fas fa-eye"></i></div>
+          <h3>2. Crystal Clarity & Silk</h3>
+          <p>Ceylon corundums are Type II gemstones. Microscopic rutile silk needles confirm natural provenance and create the iconic velvety luminescence prized over glassy synthetic stones.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon-wrap"><i class="fas fa-shapes"></i></div>
+          <h3>3. Master Lapidary Cut</h3>
+          <p>Unlike commercial cuts that retain weight at the cost of brilliance, Ceylon Gems SL gems are precision-faceted with strict optical symmetry to eliminate windowing and maximize light return.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon-wrap"><i class="fas fa-weight-hanging"></i></div>
+          <h3>4. Carat & Unheated Rarity</h3>
+          <p>Natural unheated Ceylon sapphires over 3 carats represent less than 0.5% of total mine output. Their valuation escalates exponentially per carat weight on the global auction market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       VIP Private Viewing Appointment & Salon Booking
+       ======================================================================== -->
+  <section class="section-padding" id="appointment">
+    <div class="container">
+      <div class="booking-wrap">
+        <div class="booking-info-col">
+          <span class="section-tag">Private Salons</span>
+          <h2 class="booking-title">Schedule a <span class="gold-gradient-text">Private Salon Viewing</span></h2>
+          <p>Experience our unheated loose gems and bespoke high jewelry creations in person with a senior gemologist at our private VIP suites or via secure 4K microscope virtual consultation.</p>
+
+          <ul class="booking-perks">
+            <li><i class="fas fa-check-circle"></i> Private Salon viewing suites in Colombo, London, Geneva, Dubai & New York</li>
+            <li><i class="fas fa-check-circle"></i> Hands-on 10x / 40x gemological microscope inspection</li>
+            <li><i class="fas fa-check-circle"></i> Direct bespoke consultations with master goldsmiths</li>
+            <li><i class="fas fa-check-circle"></i> Armored courier dispatch for qualified collectors</li>
+          </ul>
+
+          <div id="bookingConfirmCard"></div>
+        </div>
+
+        <div class="booking-form-col">
+          <form class="booking-form" id="appointmentBookingForm">
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="bkName">Full Name *</label>
+                <input type="text" id="bkName" class="styled-input" placeholder="e.g. Lady Victoria Sterling" required />
+              </div>
+              <div class="input-group">
+                <label for="bkEmail">Email Address *</label>
+                <input type="email" id="bkEmail" class="styled-input" placeholder="victoria@sterling.com" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="bkPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="bkPhone" class="styled-input" placeholder="+94 77 123 4567" required />
+              </div>
+              <div class="input-group">
+                <label for="bkLounge">Viewing Location *</label>
+                <select id="bkLounge" class="styled-select" required>
+                  <option value="Colombo Flagship Suite">Colombo (Ceylon Gems SL Flagship)</option>
+                  <option value="Geneva Private Salon (Rue du Rhône)">Geneva (Rue du Rhône)</option>
+                  <option value="London Mayfair Private Lounge">London (Mayfair Salon)</option>
+                  <option value="Dubai DIFC Private Suite">Dubai (DIFC)</option>
+                  <option value="New York Madison Ave Salon">New York (Madison Ave)</option>
+                  <option value="Virtual 4K Zoom Consultation">Virtual 4K Microscope Session</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="bkDate">Preferred Date *</label>
+                <input type="date" id="bkDate" class="styled-input" required />
+              </div>
+              <div class="input-group">
+                <label for="bkTime">Preferred Time Slot *</label>
+                <select id="bkTime" class="styled-select" required>
+                  <option value="Morning (10:00 AM - 12:30 PM)">Morning (10:00 AM - 12:30 PM)</option>
+                  <option value="Afternoon (02:00 PM - 04:30 PM)">Afternoon (02:00 PM - 04:30 PM)</option>
+                  <option value="Evening (05:00 PM - 07:30 PM)">Evening (05:00 PM - 07:30 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="bkInterest">Specific Acquisitions of Interest</label>
+              <input type="text" id="bkInterest" class="styled-input" placeholder="e.g. Royal Blue Cushion, Padparadscha Engagement Ring..." />
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-large">
+              <i class="fas fa-calendar-alt"></i> Confirm Private Viewing
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Testimonials & Global Trust
+       ======================================================================== -->
+  <section class="section-padding" style="background: rgba(14, 18, 27, 0.5);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Collector Testimonials</span>
+        <h2 class="section-title">Trusted by <span class="gold-gradient-text">International Connoisseurs</span></h2>
+        <p class="section-subtitle">From private family offices in Geneva and London to royal collectors across the Middle East and Asia.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Ceylon Gems SL sourced a breathtaking 5.4ct unheated Royal Blue sapphire with GIA certification. Their provenance transparency and insured Ferrari logistics to London were exemplary. A true connoisseur house."</p>
+          <div class="client-meta">
+            <div class="client-name">Lord Arthur Henderson</div>
+            <div class="client-role">Private Gem Collector · Mayfair, London</div>
+            <div class="verified-purchase"><i class="fas fa-shield-check"></i> Verified Acquisition: Royal Blue Sapphire (CG-RBS-01)</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The Padparadscha sapphire we commissioned for an engagement ring was simply sublime. The pink-orange equilibrium under natural daylight is beyond words. Sri Lankan gems have no rival."</p>
+          <div class="client-meta">
+            <div class="client-name">Elena Rostova</div>
+            <div class="client-role">Haute Joaillerie Designer · Geneva, Switzerland</div>
+            <div class="verified-purchase"><i class="fas fa-shield-check"></i> Verified Acquisition: Sunrise Padparadscha (CG-PAD-02)</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Exceptional ethical mining lineage and unmatched cutting precision. The Ceylon Star Sapphire arrived in bespoke velvet packaging with complete Gübelin gemological papers."</p>
+          <div class="client-meta">
+            <div class="client-name">His Highness Sheikh Mansoor</div>
+            <div class="client-role">Bespoke Jewelry Patron · Dubai, UAE</div>
+            <div class="verified-purchase"><i class="fas fa-shield-check"></i> Verified Acquisition: Midnight Asteria Star Sapphire</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ Accordions
+       ======================================================================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Frequently Answered</span>
+        <h2 class="section-title">Client <span class="gold-gradient-text">Inquiries & Assurance</span></h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item open">
+          <div class="faq-question">
+            <span>Are all gemstones 100% natural and ethically mined from Sri Lanka?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Every gemstone in our collection is ethically recovered from historical artisanal alluvial gravels in Ratnapura, Elahera, and Balangoda without heavy industrial devastation. Each piece undergoes exhaustive gemological testing by GIA, GRS, or Gübelin to guarantee natural origin and verify heat treatment status.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does insured international shipping and customs clearance work?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We partner with premier high-value secure transit services (Ferrari Express, Malca-Amit, Brinks). Shipments are 100% fully insured from our vault to your door or private bank vault, complete with NGJA export documentation and customs clearance coordination.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I commission a completely custom bespoke ring with a loose gem?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. You can select any loose certified gemstone from our catalog, configure setting styles and metals in our online Bespoke Atelier, or collaborate directly with our master goldsmiths on a one-of-a-kind hand-forged creation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What payment methods and escrow options are supported?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We accept international bank wire transfers (USD, EUR, GBP, CHF, AED, LKR), luxury escrow settlements via licensed escrow agents, and major credit cards for verified clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-text">
+              <span class="brand-title">Ceylon<span class="gold-gradient-text"> Gems SL</span></span>
+              <span class="brand-sub">Natural Sapphires & Haute Joaillerie</span>
+            </div>
+          </div>
+          <p>Preserving the 2,500-year legacy of Ceylon's royal gemstones through ethical provenance, master lapidary craftsmanship, and international gemological excellence.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gem Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#showcase">Royal Blue Sapphires</a></li>
+            <li><a href="#showcase">Lotus Padparadscha</a></li>
+            <li><a href="#showcase">Ceylon Alexandrite</a></li>
+            <li><a href="#showcase">Cornflower Sapphires</a></li>
+            <li><a href="#showcase">Cobalt Spinel & Rubies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services & Atelier</h4>
+          <ul class="footer-links">
+            <li><a href="#atelier">Bespoke Ring Studio</a></li>
+            <li><a href="#certification">Lab Report Verification</a></li>
+            <li><a href="#appointment">Private Salon Booking</a></li>
+            <li><a href="#education">The 4Cs Buyer Guide</a></li>
+            <li><a href="#heritage">Ceylon Mining Heritage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connoisseur Circle</h4>
+          <p>Receive private previews of newly unearthed unheated Ceylon roughs before public vault release.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="styled-input" placeholder="Enter private email..." required />
+            <button type="submit" class="btn btn-gold btn-sm"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Ceylon Gems SL Ltd. All Rights Reserved. National Gem and Jewellery Authority of Sri Lanka Licensed.
+        </div>
+        <div class="courier-badges">
+          <span><i class="fas fa-lock"></i> SSL 256-Bit Escrow</span>
+          <span><i class="fas fa-truck-moving"></i> Ferrari Express</span>
+          <span><i class="fas fa-shield-alt"></i> Malca-Amit</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Side Drawer: Inquiry Bag
+       ======================================================================== -->
+  <div class="drawer-backdrop" id="inquiryDrawerBackdrop"></div>
+  <aside class="inquiry-drawer" id="inquiryDrawer" aria-label="Inquiry Bag Drawer">
+    <div class="drawer-header">
+      <h3><i class="fas fa-gem gold-gradient-text"></i> Private Inquiry Bag</h3>
+      <button class="drawer-close-btn" id="closeInquiryDrawerBtn" aria-label="Close Drawer"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="drawer-body" id="inquiryItemsContainer">
+      <!-- Populated dynamically via app.js -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-total-row">
+        <span>Estimated Valuation:</span>
+        <strong id="inquiryTotalVal">$0 USD</strong>
+      </div>
+      <button class="btn btn-gold btn-large" style="width: 100%; margin-bottom: 0.6rem;" id="submitInquiryModalBtn" onclick="openInquiryModal()">
+        <i class="fas fa-file-invoice"></i> Proceed to VIP Acquisition Request
+      </button>
+      <button class="btn btn-outline" style="width: 100%;" onclick="dispatchInquiryCheckout('whatsapp')">
+        <i class="fab fa-whatsapp"></i> Instant WhatsApp Dispatch
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Inquiry Checkout Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="inquiryCheckoutModal">
+    <div class="modal-dialog-luxury">
+      <button class="modal-close-btn" onclick="closeInquiryModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-inner">
+        <div class="section-header" style="margin-bottom: 1.5rem; text-align: left;">
+          <span class="section-tag">Formal Dossier Dispatch</span>
+          <h2 class="section-title" style="font-size: 2rem;">Acquisition <span class="gold-gradient-text">Inquiry Submission</span></h2>
+          <p>A Senior Gemologist and Master Jeweler from Ceylon Gems SL will review your curated selections and prepare high-definition 4K microscopy videos and private courier terms.</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); dispatchInquiryCheckout('email');" class="booking-form">
+          <div class="form-row-2">
+            <div class="input-group">
+              <label for="inqClientName">Full Name *</label>
+              <input type="text" id="inqClientName" class="styled-input" placeholder="e.g. Lady Victoria Sterling" required />
+            </div>
+            <div class="input-group">
+              <label for="inqClientEmail">Email Address *</label>
+              <input type="email" id="inqClientEmail" class="styled-input" placeholder="client@domain.com" required />
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="input-group">
+              <label for="inqClientPhone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="inqClientPhone" class="styled-input" placeholder="+94 77 123 4567" required />
+            </div>
+            <div class="input-group">
+              <label for="inqConsultType">Consultation Preference</label>
+              <select id="inqConsultType" class="styled-select">
+                <option value="Colombo Flagship Suite">Colombo (Flagship Suite)</option>
+                <option value="Virtual 4K Zoom Consultation">Virtual 4K Microscope Session</option>
+                <option value="Direct WhatsApp Concierge">Direct WhatsApp Concierge</option>
+                <option value="Private Salon in London (Mayfair)">London (Mayfair Salon)</option>
+                <option value="Private Salon in Geneva (Rue du Rhône)">Geneva (Rue du Rhône)</option>
+                <option value="Private Salon in Dubai (DIFC)">Dubai (DIFC)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="inqClientNotes">Specific Inscription, Custom Mount or Delivery Notes</label>
+            <textarea id="inqClientNotes" class="styled-input" rows="3" placeholder="Tell us if you require custom GIA laser inscriptions, escrow arrangements, or expedited wedding timelines..."></textarea>
+          </div>
+
+          <div class="action-buttons-group" style="margin-top: 1rem;">
+            <button type="submit" class="btn btn-gold btn-large">
+              <i class="fas fa-paper-plane"></i> Submit Formal Dossier Inquiry
+            </button>
+            <button type="button" class="btn btn-outline btn-large" onclick="dispatchInquiryCheckout('whatsapp')">
+              <i class="fab fa-whatsapp"></i> Send via WhatsApp Concierge
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="section guide" id="guide">
-  <div class="container">
-    <div class="section-head"><div><p class="eyebrow">GEM GUIDE</p><h2>Buy with <em>knowledge.</em></h2></div></div>
-    <div class="guide-grid">
-      <article><div class="guide-num">01</div><h3>Colour</h3><p>Colour is one of the most important factors in evaluating a coloured gemstone. Look for hue, tone and saturation.</p></article>
-      <article><div class="guide-num">02</div><h3>Cut & clarity</h3><p>A well-executed cut can improve a stone's brilliance and visual appeal while clarity varies naturally by gem type.</p></article>
-      <article><div class="guide-num">03</div><h3>Treatment</h3><p>Always ask whether a gemstone has been heated or otherwise treated, and request documentation where appropriate.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="contact-section" id="contact">
-  <div class="container contact-grid">
-    <div><p class="eyebrow">GET IN TOUCH</p><h2>Looking for a <em>special stone?</em></h2><p>Tell us what you are searching for. We can help with gemstone enquiries, availability and additional details.</p><div class="contact-details"><p><b>WhatsApp</b><br><a href="https://wa.me/94700000000" target="_blank">+94 70 000 0000</a></p><p><b>Email</b><br><a href="mailto:hello@ceylongems.com">hello@ceylongems.com</a></p></div></div>
-    <form id="contact-form">
-      <label>Name<input name="name" required></label><label>Email<input name="email" type="email" required></label><label>Message<textarea name="message" rows="5" required></textarea></label><button class="btn btn-gold" type="submit">Send Enquiry</button><p class="form-status" id="form-status"></p>
-    </form>
-  </div>
-</section>
-</main>
-
-<footer><div class="container footer-inner"><a class="brand" href="#top"><span>CEYLON</span><strong>GEMS</strong></a><p>© <span id="year"></span> Ceylon Gems. All rights reserved.</p><div><a href="#collection">Collection</a><a href="#contact">Contact</a></div></div></footer>
-
-<div class="modal" id="product-modal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-card">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <img id="modal-image" alt="">
-    <div class="modal-info"><p class="eyebrow" id="modal-type"></p><h2 id="modal-title"></h2><div class="modal-price" id="modal-price"></div><p id="modal-description"></p><dl id="modal-specs"></dl><a id="modal-whatsapp" class="btn btn-dark" target="_blank">Enquire on WhatsApp</a></div>
-  </div>
-</div>
-<script src="js/products.js"></script>
-<script src="js/main.js"></script>
+  <!-- Scripts -->
+  <script src="js/gems-data.js"></script>
+  <script src="js/shimmer-fx.js"></script>
+  <script src="js/customizer.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
